@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch */
+@layer base{
+    section{
+        @apply p-10
+    }
+}
+
+@layer utilities  {
+    .profilButton{
+     @apply rounded-md  text-white-prof pl-2 pr-2 pt-1 pb-1 tracking-widest font-semibold;
+    }
+
+   @font-face{
+    font-family: 'font';
+    src:url('/src/medias/fonts/AlfaSlabOne-Regular.ttf');
+   } 
+
+   .fontSecondary{
+    font-family: 'font';
+   }
+
+   .shadowTitleSecondary{
+    text-shadow:3px 3px #fee7ba;
+   }
+   .important{
+    text-align: left  !important;
+   }
+
+   .inputconf{
+    @apply h-16 w-80 border-2 p-2 rounded-md mt-3
+   }
+}
